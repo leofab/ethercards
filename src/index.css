@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  /* Deep Space Theme */
+  --background: 240 30% 8%;    /* Deep almost black blue */
+  --foreground: 210 20% 98%;   /* White */
+
+  --primary: 262 83% 58%;      /* Vibrant Purple */
+  --primary-foreground: 210 20% 98%;
+
+  --secondary: 240 25% 15%;    /* Darker panel bg */
+  --secondary-foreground: 210 20% 90%;
+
+  --muted: 240 20% 12%;
+  --muted-foreground: 215 16% 65%;
+
+  --accent: 326 100% 60%;      /* Pink/Magenta Accent */
+  --accent-foreground: 210 20% 98%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 240 20% 20%;
+  --input: 240 20% 18%;
+  --ring: 262 83% 58%;
+
+  /* Rarity Colors */
+  --rarity-common: 210 10% 50%;
+  --rarity-rare: 210 100% 50%;
+  --rarity-epic: 270 100% 60%;
+  --rarity-legendary: 35 100% 50%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    font-family: var(--font-sans);
+    background-image:
+            radial-gradient(circle at 15% 50%, rgba(124, 58, 237, 0.08), transparent 25%),
+            radial-gradient(circle at 85% 30%, rgba(219, 39, 119, 0.08), transparent 25%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+  }
+
+  .card-glow-legendary {
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.3);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
