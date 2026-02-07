@@ -22,7 +22,7 @@ export function Navigation() {
                 <div className="flex items-center justify-between h-20">
 
                     {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-2 group">
+                    <Link href="/public" className="flex items-center space-x-2 group">
                         <div className="p-2 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
                             <Gamepad2 className="w-6 h-6 text-primary" />
                         </div>

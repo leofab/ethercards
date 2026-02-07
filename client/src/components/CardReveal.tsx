@@ -1,4 +1,4 @@
-import type {CardTemplate} from "../../shared/schema";
+import type {CardTemplate} from "../../../shared/schema";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { cn } from "../lib/utils";

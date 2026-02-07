@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { api } from "../../shared/routes";
+import { api } from "../../../shared/routes";
 
 export function usePacks() {
     return useQuery({

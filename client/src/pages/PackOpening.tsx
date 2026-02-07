@@ -6,7 +6,7 @@ import { CardReveal } from "../components/CardReveal";
 import { Button } from "../components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader2, ArrowLeft, PackageOpen } from "lucide-react";
-import type {CardTemplate} from "../../shared/schema";
+import type {CardTemplate} from "../../../shared/schema";
 
 export default function PackOpening() {
     const [, setLocation] = useLocation();

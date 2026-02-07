@@ -1,4 +1,4 @@
-import type {PackType} from "../../shared/schema";
+import type {PackType} from "../../../shared/schema";
 import { motion } from "framer-motion";
 import { useWallet } from "../hooks/use-wallet";
 import { Button } from "./ui/button";
